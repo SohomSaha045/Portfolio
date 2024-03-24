@@ -2,7 +2,8 @@ import {Navbar} from "@/components/navbar";
 import { MacbookScroll } from "@/components/ui/macbook-scroll";
 import Hom from '@/components/home'
 import TypewriterComponent from "typewriter-effect";
-import About from '@/components/about'
+import About from '@/components/about';
+import { Project } from "@/components/projects";
 export default function Home() {
 
   
@@ -19,8 +20,12 @@ export default function Home() {
         </section>
        
         <div className="">
-        <section id="3">
+        <section id="">
         <MacbookScroll ></MacbookScroll>
+        </section>
+        <section id='3'>
+          <Project></Project>
+
         </section>
         
         </div>

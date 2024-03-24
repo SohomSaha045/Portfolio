@@ -19,7 +19,8 @@ const Skill = ({ name, x, y }) => {
 const Skills = () => {
   return (
     <>
-      <div className="w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight">
+      <div className="w-[85%] h-screen relative flex items-center justify-center rounded-full bg-circularLight">
+        
         <motion.div
           className="flex items-center justify-center rounded-full font-bold bg-gray-100 text-gray-950 p-8 shadow-dark cursor-pointer "
           whileHover={{ scale: 1.15 }}

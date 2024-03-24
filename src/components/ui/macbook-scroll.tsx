@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import { MotionValue, motion, useScroll, useTransform } from "framer-motion";
-import { cn } from '@/utils/cn';
+import { cn } from "@/utils/cn";
 import {
   IconBrightnessDown,
   IconBrightnessUp,
@@ -18,7 +18,7 @@ import {
   IconVolume2,
   IconVolume3,
 } from "@tabler/icons-react";
-import screen from '../../../public/assets/screen.png'
+import screen from "../../../public/assets/screen.png";
 
 import { IconSearch } from "@tabler/icons-react";
 import { IconWorld } from "@tabler/icons-react";
@@ -63,7 +63,7 @@ export const MacbookScroll = ({
     [0, 0.3],
     [0.6, isMobile ? 1 : 1.5]
   );
-  const translate = useTransform(scrollYProgress, [0, 1], [0, 1200]);
+  const translate = useTransform(scrollYProgress, [0, 1], [0, 600]);
   const rotate = useTransform(scrollYProgress, [0.1, 0.12, 0.3], [-28, -28, 0]);
   const textTransform = useTransform(scrollYProgress, [0, 0.3], [0, 100]);
   const textOpacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
@@ -78,12 +78,12 @@ export const MacbookScroll = ({
           translateY: textTransform,
           opacity: textOpacity,
         }}
-        className="text-white text-neutral-800 text-3xl font-bold mb-20 text-center"
+        className="text-white text-neutral-800 text-5xl font-bold mb-20 text-center"
       >
         {title || (
-          <span>
-            Welcome to Sohom's Portfolio Website. <br /> 
-            <h3 className="text-neutral-300 font-light">Scroll down to explore.</h3>
+          <span >
+             My Github Profile
+            
           </span>
         )}
       </motion.h2>
@@ -168,22 +168,21 @@ export const Lid = ({
         }}
         className="h-96 w-[32rem] absolute inset-0 bg-[#FFFFFF] rounded-2xl p-2"
       >
-      <div className="absolute inset-0 bg-[#0000] rounded-lg" />
-        
+        <div className="absolute inset-0 bg-[#0000] rounded-lg" />
+
         <Image
           src={screen}
           alt="Github Page"
           fill
           className="object-cover object-left-top
            absolute rounded-lg inset-0 h-full w-full hover:cursor-pointer"
-          onClick={()=>{
-            window.location.href ='https://github.com/SohomSaha045';
+          onClick={() => {
+            window.open("https://github.com/SohomSaha045","_blank");
+
           }}
-          
         />
-        
       </motion.div>
-      </div>
+    </div>
   );
 };
 

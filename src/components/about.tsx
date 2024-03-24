@@ -50,7 +50,7 @@ export default function About() {
          <CardBody className=" bg-black relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1]  sm:w-[30rem] h-auto rounded-xl px-8 border  ">
         
 
-        <CardItem translateZ="100" className="w-full mt-4 justify-center items-center">
+        <CardItem translateZ="100" className="w-full mt-4 justify-center items-center cursor-grabbing">
           <Image
             src={LinkedIn}
           
@@ -64,6 +64,9 @@ export default function About() {
         </div>
       </div>
       <div className="flex w-full flex-col items-center justify-center p-16 m-8 mt-16">
+        <div className="flex w-full items-center justify-center font-bold text-6xl m-12">
+          Skills
+        </div>
         <Skills></Skills>
       </div>
       
