@@ -37,7 +37,7 @@ export default function Home() {
       </div>
 
       <Navbar></Navbar>
-      <section id="1" className="p-0 m-32 mt-16">
+      <section id="1" className="p-0  mt-16">
         <Hom></Hom>
       </section>
       <section id="2">

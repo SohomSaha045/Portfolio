@@ -6,8 +6,8 @@ import face from '../../public/assets/face3.png';
 import Card from "./ui/card";
 export default function Hom() {
     return (
-      <div className="w-screen flex flex-row items-center justify-space p-16    ">
-        <div className="flex w-1/2 flex-col items-left justify-center p-8 font-bold text-7xl font-san-serif ml-8 ">
+      <div className="w-full flex flex-row items-center justify-space p-16  mb-32  ">
+        <div className="flex w-1/2 flex-col items-left justify-center p-8 font-bold text-7xl font-san-serif m-16 ">
         <div>
         <Card  text={`Hey,`} duration={2} />
         <Card  text={`I'am Sohom`} duration={2} />

@@ -14,8 +14,8 @@ declare module "@react-three/fiber" {
 extend({ ThreeGlobe });
 
 const RING_PROPAGATION_SPEED = 3;
-const aspect = 1;
-const cameraZ = 320;
+const aspect = 0.7;
+const cameraZ = 310;
 
 type Position = {
   order: number;
@@ -153,7 +153,7 @@ export function Globe({ globeConfig, data }: WorldProps) {
       globeRef.current
         .hexPolygonsData(countries.features)
         .hexPolygonResolution(3)
-        .hexPolygonMargin(0.7)
+        .hexPolygonMargin(0.6)
         .showAtmosphere(defaultProps.showAtmosphere)
         .atmosphereColor(defaultProps.atmosphereColor)
         .atmosphereAltitude(defaultProps.atmosphereAltitude)
@@ -247,7 +247,7 @@ export function World(props: WorldProps) {
   const scene = new Scene();
   scene.fog = new Fog(0xfffff, 400, 2000);
   return (
-    <Canvas scene={scene} camera={new PerspectiveCamera(60, aspect, 180, 1800)}>
+    <Canvas className="w-full" scene={scene} camera={new PerspectiveCamera(60, aspect, 180, 1800)}>
       <WebGLRendererConfig />
       <ambientLight color={globeConfig.ambientLight} intensity={0.6} />
       <directionalLight
