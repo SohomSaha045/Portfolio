@@ -2,7 +2,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-function Card( {text,duration} ) {
+interface CardProps {
+  text: string; // Define text prop as a string
+  duration?: number; // Define duration prop as optional number (can be undefined)
+}
+
+function Card( {text,duration}: CardProps ) {
   return (
     <motion.div
       className="card p-2"
