@@ -4,6 +4,7 @@ import Hom from '@/components/home'
 import TypewriterComponent from "typewriter-effect";
 import About from '@/components/about';
 import { Project } from "@/components/projects";
+import Contact from "@/components/contact";
 export default function Home() {
 
   
@@ -17,18 +18,19 @@ export default function Home() {
         </section>
         <section id='2'>
         <About></About>
-        </section>
-       
-        <div className="">
-        <section id="">
         <MacbookScroll ></MacbookScroll>
         </section>
+       
+        
+        
         <section id='3'>
           <Project></Project>
 
         </section>
+        <section id="4" className="w-full">
+        <Contact></Contact>
+        </section>
         
-        </div>
         
       </main>
     );
