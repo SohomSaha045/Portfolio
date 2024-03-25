@@ -1,8 +1,14 @@
 import React, { useRef } from "react";
 import { useScroll, motion } from "framer-motion";
 import LiIcon from "./LiIcon";
+interface details{
+    type:string,
+    time:string,
+    place:string,
+    info:string[]
+}
 
-const Details = ({ type, time, place, info }) => {
+const Details = ({ type, time, place, info }:details) => {
     const ref = useRef(null);
 
     return (
