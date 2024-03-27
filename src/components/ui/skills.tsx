@@ -40,11 +40,11 @@ const Skills = () => {
         <Skill name="C++" x="0vw" y="11vw" color="bg-lime-300"/>
         <Skill name="ReactJS" x="-20vw" y="-10vw" color="bg-green-300"/>
         <Skill name="ExpressJS" x="10vw" y="-14vw" color="bg-emerald-300"/>
-        <Skill name="NodeJS" x="31vw" y="1vw" color="bg-teal-300"/>
+        <Skill name="Java" x="31vw" y="1vw" color="bg-teal-300"/>
         <Skill name="MongoDB" x="0vw" y="-21vw" color="bg-cyan-300"/>
         <Skill name="MySQL" x="-32vw" y="-1vw" color="bg-sky-300"/>
         <Skill name="NextJS" x="-21vw" y="12vw" color="bg-blue-300"/>
-        <Skill name="Java" x="15vw" y="15vw" color="bg-indigo-300"/>
+        <Skill name="NodeJS" x="15vw" y="15vw" color="bg-indigo-300"/>
         <Skill name="Figma" x="-7vw" y="21vw" color="bg-violet-300"/>
       </div>
     </>
