@@ -5,13 +5,13 @@ import { ButtonsCard } from "./ui/tailwindcss-buttons";
 
 export default function Contact(){
     return (
-        <div className="  justify-center items-center  py-16 my-8 max-md:pb-4">
+        <div className="  justify-center items-center py-16 my-8">
           <div className="flex text-6xl font-bold justify-center w-full mb-8 max-md:text-4xl">Contact Me</div>
-          <div className="flex flex-row  justify-center w-full h-auto max-md:flex-col">
-            <div className="w-[50%] flex justify-center  px-8 max-md:w-[100%] max-md:mt-4 ">
+          <div className="flex flex-row  justify-center w-full h-[500px]  max-md:flex-col max-md:h-auto">
+            <div className="w-[50%] flex justify-center   px-8 max-md:w-[70%] max-md:m-auto">
                 <GlobeDemo></GlobeDemo>
             </div>
-            <div className="flex flex-col w-[50%] items-center jsutify-center my-auto mx-auto">
+            <div className="flex flex-col w-[50%] items-center jsutify-center my-auto mx-auto max-md:w-auto">
             <motion.div
             whileHover={{scale:1.05}}
             transition={{ duration: 1.05 }}
