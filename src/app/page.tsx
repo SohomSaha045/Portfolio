@@ -40,14 +40,14 @@ export default function Home() {
       <section id="1" className="p-0  mt-16">
         <Hom></Hom>
       </section>
-      <section id="2">
+      <section id="2" className="">
         <About></About>
         <MacbookScroll></MacbookScroll>
       </section>
-      <section id="3">
+      <section id="3" className="">
         <Project></Project>
       </section>
-      <section id="4" className="w-full">
+      <section id="4" className="w-full " >
         <Contact></Contact>
       </section>
     </main>

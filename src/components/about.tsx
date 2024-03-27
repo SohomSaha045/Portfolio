@@ -13,12 +13,12 @@ import Link from "next/link";
 export default function About() {
   return (
     <div className=" flex flex-col items-center  p-0 mt-8  ">
-      <div className="flex font-bold text-6xl m-0 pt-24 pb-12 w-full justify-center ">
-        <Card text={`Eagerness Inspires Progress.`} duration={1} />
+      <div className="flex font-bold text-6xl m-0 pt-24 pb-12 w-full justify-center max-sm:text-4xl max-sm:text-center ">
+        <Card text={`Eagerness Inspires  Progress.`} duration={1} />
       </div>
-      <div className=" flex flex-row  w-full mt-16 p-0">
-        <div className="p-8 pl-32 w-2/3">
-          <div className="font-bold text-xl">ABOUT ME</div>
+      <div className=" flex flex-row  w-full mt-16 p-0 max-sm:flex-col">
+        <div className="p-8 pl-32 w-2/3 max-sm:p-0 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:w-full max-sm:p-12  ">
+          <div className="font-bold text-xl ">ABOUT ME</div>
           <div className="pl-4 pt-4">
             <div className=" pt-4 text-base font-semibold">
               - Greetings, I'm Sohom Saha, a proficient FullStack developer ,
@@ -47,14 +47,14 @@ export default function About() {
           }}
         >
         <CardContainer className="inter-var">
-         <CardBody className=" bg-black relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1]  sm:w-[30rem] h-auto rounded-xl px-8 border  ">
+         <CardBody className=" bg-black relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1]  sm:w-[30rem] h-auto rounded-xl px-8 border max-md:px-2  ">
         
 
-        <CardItem translateZ="100" className="w-full mt-4 justify-center items-center cursor-grabbing">
+        <CardItem translateZ="100" className="w-full mt-4 justify-center items-center cursor-grabbing max-md:mt-0 ">
           <Image
             src={LinkedIn}
           
-            className=" w-[75%] h-[75%] object-scaledown rounded-xl group-hover/card:shadow-xl mx-auto"
+            className=" w-[75%] h-[75%] object-scaledown rounded-xl group-hover/card:shadow-xl mx-auto max-md:w-[100%] "
             alt="thumbnail"
           />
         </CardItem>
@@ -63,8 +63,8 @@ export default function About() {
     </CardContainer>
         </div>
       </div>
-      <div className="flex w-full flex-col items-center justify-center p-16 m-8 mt-16">
-        <div className="flex w-full items-center justify-center font-bold text-6xl m-12">
+      <div className="flex w-full flex-col items-center justify-center p-16 m-8 mt-16 ">
+        <div className="flex w-full items-center justify-center font-bold text-6xl m-12 max-md:text-4xl">
           Skills
         </div>
         <Skills></Skills>

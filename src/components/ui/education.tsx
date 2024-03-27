@@ -12,7 +12,7 @@ const Details = ({ type, time, place, info }:details) => {
     const ref = useRef(null);
 
     return (
-        <li ref={ref} className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-left justify-between">
+        <li ref={ref} className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-left justify-between  ">
             <LiIcon reference={ref} />
             <motion.div
                 initial={{ y: 50 }}
@@ -56,11 +56,11 @@ const Education = () => {
     ];
 
     return (
-        <div className="mt-36 mb-8">
-            <h2 className="font-bold text-8xl mb-32 w-full text-center">
+        <div className="mt-36 mb-8 max-md:mt-16">
+            <h2 className="font-bold text-8xl mb-32 w-full text-center max-md:text-4xl ">
                 Education
             </h2>
-            <div ref={ref} className="w-[75%] mx-auto relative">
+            <div ref={ref} className="w-[75%] mx-auto relative max-md:w-[90%]">
                 <motion.div
                     style={{ scaleY: scrollYProgress }}
                     className="absolute left-9 top-0 w-[4px] h-full bg-white origin-top"

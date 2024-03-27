@@ -3,7 +3,7 @@ import { HoverEffect } from "../components/ui/projectGrid";
 export function Project() {
   return (
     <div className="max-w-5xl mx-auto px-8">
-      <div className=" flex w-full text-7xl font-bold justify-center items-center">
+      <div className=" flex w-full text-7xl font-bold justify-center items-center max-md:mt-32 max-md:text-4xl">
         Projects
       </div>
       <HoverEffect items={projects} />
