@@ -1,4 +1,6 @@
-import React from "react";
+'use client'
+import React, { useState } from "react";
+
 import { motion } from "framer-motion";
 interface skill {
   name:string,
@@ -6,7 +8,14 @@ interface skill {
   y:string,
   color:string
 }
+const childVariants = {
+  default: { zIndex: 10 },
+  clicked: { zIndex: 50 },
+};
 const Skill = ({ name, x, y,color }:skill) => {
+  const [isClicked, setIsClicked] = useState(false);
+
+  const handleClick = () => setIsClicked(!isClicked);
   return (
     <motion.div
       className= {`flex items-center justify-center rounded-full font-semibold text-gray-950 py-3 px-6 shadow-dark cursor-pointer absolute ${color} max-md:px-3 max-md:py-2 `} 
@@ -14,7 +23,10 @@ const Skill = ({ name, x, y,color }:skill) => {
       initial={{ x: 0, y: 0 }}
       whileInView={{ x: x, y: y }}
       transition={{ duration: 1.5 }}
+      variants={childVariants}
       viewport={{once:false}}
+      animate={isClicked ? "clicked" : "default"}
+      onClick={handleClick}
     >
       {name}
     </motion.div>
